@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const AdsSchema = mongoose.Schema(
   {
     title: String,
-    subtitle: String,
+    content: String,
     body: String,
     urlImage: String,
     expires: Date,
