@@ -11,7 +11,7 @@ exports.create = (req, res) => {
   const ad = new Ad({
     title: req.body.title || "Untitled Ads",
     content: req.body.content,
-    body: req.body,
+    body: req.body.body,
     URLImage: req.body.URLImage,
     expires: req.body.expires,
   });
