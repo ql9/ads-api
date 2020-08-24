@@ -76,6 +76,9 @@ exports.update = (req, res) => {
     {
       title: req.body.title || "Untitled Ads",
       content: req.body.content,
+      body: req.body.body,
+      urlImage: req.body.urlImage,
+      expires: req.body.expires,
     },
     { new: true }
   )
