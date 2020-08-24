@@ -96,8 +96,8 @@ exports.update = (req, res) => {
           message: "Ads not found with id " + req.params.adId,
         });
       }
-      return res.status(500).send({
-        message: "Error updating ads with id " + req.params.adId,
+      return res.send({
+        message: "Updated ads with id " + req.params.adId,
       });
     });
 };
