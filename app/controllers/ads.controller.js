@@ -12,7 +12,7 @@ exports.create = (req, res) => {
     title: req.body.title || "Untitled Ads",
     content: req.body.content,
     body: req.body.body,
-    URLImage: req.body.URLImage,
+    urlImage: req.body.urlImage,
     expires: req.body.expires,
   });
 
