@@ -6,7 +6,7 @@ const AdsSchema = mongoose.Schema(
     content: String,
     body: String,
     urlImage: String,
-    expires: Date,
+    expires: String,
   },
   {
     timestamps: true,
