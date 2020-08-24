@@ -1,6 +1,6 @@
 module.exports = (app) => {
   const ads = require('../controllers/ads.controller.js');
-
+  const login = require('../controllers/login.controller.js');
   // Create a new ads.
   app.post('/ads', ads.create);
 
@@ -15,4 +15,12 @@ module.exports = (app) => {
 
   // Delete a ads with adId
   app.delete('/ads/:adId', ads.delete);
+
+
+  app.post('/login', login.create);
+
+  app.get('/login', login.findAll);
+
+  app.get('/login/:username/:password', login.findOne);
+
 }
